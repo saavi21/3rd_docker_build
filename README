@@ -1,0 +1,12 @@
+git clone https://github.com/saavi21/3rd_docker_build.git
+cd 3rd_docker_build
+docker image build -t web1 .
+docker image inspect web1
+docker image build -t web1:2.0 .  #image created with tag 
+docker image ls
+docker image rm web1:2.0
+docker image tag web1 saavi21/web1:latest
+docker image tag web1 saavi21/web1:2.5
+docker image ls
+
+
